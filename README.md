@@ -1,4 +1,3 @@
-<html>
 <h1>
         cy's website :)
 </h1>
@@ -17,4 +16,4 @@
     <p>
     how did u do that......
     </p>
-</html>
+
