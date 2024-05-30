@@ -1,9 +1,7 @@
 <html>
-<head>
-    <title>
+<h1>
         cy's website :)
-    </title>
-</head>
+</h1>
 
 <body>
     <p>
