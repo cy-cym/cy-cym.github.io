@@ -1,4 +1,17 @@
-<!DOCTYPE html>
 <html>
-<h1>cy's webpage</h1>
-<body> not yet </body>
+<head>
+    <title>
+        cy's website :)
+    </title>
+</head>
+
+<body>
+    <p>
+        I'm trying this out.<br> 
+        for once in my life.<br>
+        let me get what i want. <br>
+        it'll be the first time. <br>.
+    </p>
+</body>
+
+</html>
