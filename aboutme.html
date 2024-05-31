@@ -20,6 +20,44 @@
             text-align: center;
         }
     </style>
+
+<style>
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: blue;
+ color: white;
+ border: 5px solid orange;
+}
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ animation: scroll-left 30s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+ 0%   {
+ transform: translateX(100%); 		
+ }
+ 100% {
+ transform: translateX(-100%); 
+ }
+}
+</style>
+
+<div class="scroll-left">
+ <p> 
+    Cy March is a poet & collage artist living, teaching, and writing in Charlottesville, VA. Cy enjoys playing with words & sounds, being goofy, and patching stuff together. </p>
+</div>
+        
 <h2> what i look like photo </h2>
         <p>photo taken by Eve March</p>
 
