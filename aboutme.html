@@ -47,6 +47,7 @@ a:visited {
  background: blue;
  color: white;
  border: 5px solid orange;
+ white-space: nowrap;
 }
 .bounce span {
  position: absolute;
@@ -85,6 +86,35 @@ a:visited {
  transform: translateX(-50%); 
  }
 }
+
+/* Define your media query breakpoints. 
+At the defined max-widths, these styles will override the ones set above */
+@media screen and (max-width: 1025px) {
+   @keyframes bouncing-text {
+      100% { 
+        transform: translateX(-100%); 
+      } 
+    }
+} 
+
+@media screen and (max-width: 600px) {
+   @keyframes bouncing-text {
+      100% { 
+        transform: translateX(-200%); 
+      } 
+    }
+}
+
+@media screen and (max-width: 400px) {
+   @keyframes bouncing-text {
+      100% { 
+        transform: translateX(-400%); 
+      } 
+    }
+}
+
+
+
 </style>
 
 
