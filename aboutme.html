@@ -60,6 +60,12 @@ a:visited {
     		animation: marquee 25s linear infinite;
     		white-space: nowrap;
         }
+		@media (max-width: 768px) {
+    .marquee span {
+        padding-left: 1%; 
+        animation: marquee 27s linear infinite; 
+    }
+		}
         @keyframes marquee {
             0% {
                 transform: translateX(100%);
