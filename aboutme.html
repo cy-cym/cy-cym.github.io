@@ -59,7 +59,13 @@ a:visited {
 		line-height: 50px;
     		animation: marquee 25s linear infinite;
     		white-space: nowrap;
-        }	
+		will-change: transform;
+        }
+		@media (max-width: 768px) {
+    	.marquee span {
+        padding-left: 1%; 
+        animation: marquee 30s linear infinite; 
+    }
         @keyframes marquee {
             0% {
                 transform: translateX(100%);
