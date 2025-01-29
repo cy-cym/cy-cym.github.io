@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="utf-8"
+          name="viewport"
+          content="width=device-width,
+                   initial-scale=.75" />
+      <style>
+     body {background-color: white;}
+          footer {
+            text-align: center;
+            color: blue;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+       }
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+         
+        h1 {
+          color: CornflowerBlue;
+            text-align: left;
+          }
+        ul li {
+          color: CornflowerBlue;
+            text-align: left;
+          }
+</style>
+
 
