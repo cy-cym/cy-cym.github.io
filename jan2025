@@ -35,4 +35,20 @@ a:visited {
           }
 </style>
 
+ul li {
+          color: CornflowerBlue;
+            text-align: left;
+          }
+</style>
+
+          
+           <ul>
+  <li>"Samson" by Regina Spektor</li>
+  <li>bike chain fell off</li>
+  <li>blue candle poking out of a green package</li>
+  <li>cried at the dining table</li>
+  <li>B sat behind me</li>
+  <li>heating pad around my neck</li>
+</ul>  
+
 
