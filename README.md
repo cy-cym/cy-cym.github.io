@@ -1,19 +1,9 @@
 <h1>
-        cy's website :)
+        Cy's Website :)
 </h1>
 
 <body>
     <p>
-        I'm trying this out.<br> 
-        for once in my life.<br>
-        let me get what i want. <br>
-        it'll be the first time. <br>.
+        a website to house Cy's work and to say hello
     </p>
 </body>
-
-<hr>
-<body>
-    <p>
-    how did u do that......
-    </p>
-
