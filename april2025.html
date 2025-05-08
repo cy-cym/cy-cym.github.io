@@ -29,25 +29,32 @@ a:visited {
             border:1px solid CornflowerBlue;
                     }
         img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  width: 33.33%; /* Keep 3 columns */
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 600px; /* Fixed width so it scrolls instead of compressing */
   }
-
-  @media screen and (max-width: 768px) {
-    table, tr, td {
-      display: block;
-      width: 100%;
-    }
-    td {
-      margin-bottom: 1em;
-    }
-  }
+}
          
         h1 {
           color: CornflowerBlue;
@@ -84,9 +91,9 @@ a:visited {
   <li>"E. is for Everlasting thats the work I'm carrying through By the help of Jesus he teaches me Just what to do" - Sister Gertrude Morgan</li>
 </ul>  
 
-          <div style="overflow-x:auto;">
-          <table style="width:80%">
-  <tr>
+          <div class="table-wrapper">
+    <table>
+      <tr>
     <td>
         <img style="vertical-align: bottom;"  
             src="wanderin.jpg" 
