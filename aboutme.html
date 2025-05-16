@@ -41,34 +41,41 @@ a:visited {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 250px; /* ✅ NEW: controls image height */
+  object-fit: cover;  /* ensures consistent crop */
 }
 
 .caption {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(100, 149, 237, 0.7); /* CornflowerBlue with transparency */
+  background: rgba(100, 149, 237, 0.75); /* CornflowerBlue */
   color: white;
   text-align: center;
-  padding: 0.4em 0;
-  font-size: 0.9em;
+  padding: 0.6em 0; /* ✅ NEW: slightly more vertical space */
+  font-size: 1rem;   /* ✅ NEW: bigger text */
+  line-height: 1.4;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
 
-/* Desktop hover effect */
 .img-wrap:hover .caption {
   opacity: 1;
 }
 
-/* Mobile: always show */
+/* Mobile: always show the caption below */
 @media screen and (max-width: 768px) {
   .caption {
     position: static;
     background: none;
     color: CornflowerBlue;
+    font-size: 1.1rem;   /* ✅ NEW: make mobile caption readable */
+    padding: 0.5em 0 0.8em;
     opacity: 1;
-    padding: 0.3em 0 0.6em;
+  }
+
+  .img-wrap img {
+    max-height: none; /* ✅ Let mobile images expand naturally if needed */
   }
 }
 
