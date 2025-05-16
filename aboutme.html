@@ -31,6 +31,47 @@ a:link {
 a:visited {
   color: blue;
 }
+		.img-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(100, 149, 237, 0.7); /* CornflowerBlue with transparency */
+  color: white;
+  text-align: center;
+  padding: 0.4em 0;
+  font-size: 0.9em;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Desktop hover effect */
+.img-wrap:hover .caption {
+  opacity: 1;
+}
+
+/* Mobile: always show */
+@media screen and (max-width: 768px) {
+  .caption {
+    position: static;
+    background: none;
+    color: CornflowerBlue;
+    opacity: 1;
+    padding: 0.3em 0 0.6em;
+  }
+}
+
        footer {
             text-align: center;
             color: blue;
@@ -40,48 +81,18 @@ a:visited {
             width: 100%;
        }
        
-.bounce {
-  height: 40px;	
-  overflow: hidden;
-  position: relative;
-  background: blue;
-  color: white;
-  border: 5px solid orange;
-  width: 100%;
-}
 
-.bounce p {
-  position: absolute;
-  white-space: nowrap; /* prevent text from wrapping */
-  margin: 0;
-  line-height: 40px;
-  text-align: center;
-  font-size: 1.2rem;
-  left: 0;
-
-  /* Start position: off the right side */
-  transform: translateX(100%);
-  animation: bouncing-text 12s linear infinite;
-}
-
-@keyframes bouncing-text {
-  0%   { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-
-                  
 </style>
 
-
-          <div class="bounce">
-    <p>Cy March is a poet & collage artist living, teaching, and writing in Charlottesville, VA. Cy enjoys playing with words & sounds, being goofy, and patching stuff together. </p>
-	  </div>
-
-<p><a href="surprise.html">
-        <img src="Cy_March.jpg" 
-          alt="photo of cy" 
-          align="center"/> </p><br>
+<div class="img-wrap">
+  <img src="Cy_March.jpg" alt="photo of Cy">
+  <div class="caption">Cy March is a poet & collage artist living, teaching, and writing in Charlottesville, VA. Cy enjoys playing with words & sounds, being goofy, and patching stuff together.</div>
+</div>
+	
+<p>
+    <a href="surprise.html" target="_blank"
+        >More?</a>
+</p>
 
 <footer>
   <a href="index.html"</a>
