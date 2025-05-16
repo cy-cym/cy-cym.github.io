@@ -41,8 +41,6 @@ a:visited {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 250px; /* ✅ NEW: controls image height */
-  object-fit: contain;  /* ensures consistent crop */
 }
 
 .caption {
@@ -75,7 +73,8 @@ a:visited {
   }
 
   .img-wrap img {
-    max-height: none; /* ✅ Let mobile images expand naturally if needed */
+    max-height: 300px;
+    object-fit: contain;
   }
 }
 
