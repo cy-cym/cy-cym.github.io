@@ -31,70 +31,44 @@ a:link {
 a:visited {
   color: blue;
 }
-		.img-wrap {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.img-wrap img {
-  display: block;
-  width: 100%;
-  height: 300px;
-}
-
-.caption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(100, 149, 237, 0.75); /* CornflowerBlue */
-  color: white;
-  text-align: center;
-  padding: 0.6em 0; /* ✅ NEW: slightly more vertical space */
-  font-size: 1rem;   /* ✅ NEW: bigger text */
-  line-height: 1.4;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.img-wrap:hover .caption {
-  opacity: 1;
-}
-
-/* Mobile: always show the caption below */
-@media screen and (max-width: 768px) {
-  .caption {
-    position: static;
-    background: none;
-    color: CornflowerBlue;
-    font-size: 1.1rem;   /* ✅ NEW: make mobile caption readable */
-    padding: 0.5em 0 0.8em;
-    opacity: 1;
-  }
-
-  .img-wrap img {
-    max-height: 300px;
-    object-fit: contain;
-  }
-}
-
-       footer {
-            text-align: center;
-            color: blue;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-       }
-       
+		.marquee {
+	height: 60px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: blue;
+    color: white;
+    border: 5px solid orange;
+    box-sizing: border-box;
+    position: relative;
+    will-change: transform;
+        }
+        .marquee span {
+		display: inline-block;
+   		padding-left: 5%;
+		line-height: 50px;
+    		animation: marquee 25s linear infinite;
+    		white-space: nowrap;
+		will-change: transform;
+        }
+		@media (max-width: 768px) {
+    .marquee span {
+        padding-left: .1%; 
+        animation: marquee 20s linear infinite; 
+    }
+		}
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
 
 </style>
-
-<div class="img-wrap">
-  <img src="Cy_March.jpg" alt="photo of Cy">
-  <div class="caption">Cy March is a poet & collage artist living, teaching, and writing in Charlottesville, VA. Cy enjoys playing with words & sounds, being goofy, and patching stuff together.</div>
-</div>
-
+          <div class="marquee">
+    <span>Cy March is a poet & collage artist living, teaching, and writing in Charlottesville, VA. Cy enjoys playing with words & sounds, being goofy, and patching stuff together. &nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 <footer>
   <a href="index.html"</a>
