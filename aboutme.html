@@ -3,8 +3,6 @@
           content="width=device-width,
                    initial-scale=.75" />
 
-<h1> About Cy: </h1>
-
 
 <body>
         <style>
@@ -12,9 +10,13 @@
            text-align: center;
            color: orange
         }     
-        h2 {
-            color: orange;
-            text-align: left;
+        h3 {
+            color: blue;
+            text-align: center;
+        }
+	h3.dotted {
+	    color: orange;
+            border-style: dotted; 
         }
         p {
             text-align: center;
@@ -39,45 +41,13 @@ a:link {
 a:visited {
   color: blue;
 }
-		.marquee {
-	height: 60px;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background: blue;
-    color: white;
-    border: 5px solid orange;
-    box-sizing: border-box;
-    position: relative;
-    will-change: transform;
-        }
-        .marquee span {
-		display: inline-block;
-   		padding-left: 5%;
-		line-height: 50px;
-    		animation: marquee 25s linear infinite;
-    		white-space: nowrap;
-		will-change: transform;
-        }
-		@media (max-width: 768px) {
-    .marquee span {
-        padding-left: .1%; 
-        animation: marquee 20s linear infinite; 
-    }
-		}
-        @keyframes marquee {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
+		
 </style>
-          <div class="marquee">
-    <span>Cy March is a poet & collage artist living, teaching, and writing in Charlottesville, VA. Cy enjoys playing with words & sounds, being goofy, and patching stuff together. &nbsp;&nbsp;&nbsp;&nbsp;</span>
-	  </div>
+	<h1> About Cy: </h1> <br>
+	
+	<h3 style="text-align:center" class="dotted">
+       Cy March is a poet & collage artist living, teaching, and writing in Charlottesville, VA. Cy enjoys playing with words & sounds, being goofy, and patching stuff together. 
+	  </h3>
 
 		  <p><a href="surprise.html">
         <img src="Cy_March.jpg" 
