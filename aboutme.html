@@ -15,9 +15,16 @@
             text-align: center;
         }
 	h3.dashed {
-	    color: blue;
-            border-style: dashed; 
-        }
+	 color: blue;
+  	 border: 2px dashed blue;
+         padding: 1rem; /* Add internal spacing */
+         margin: 1rem 0; /* Optional: vertical spacing from other elements */
+}
+		@media screen and (max-width: 768px) {
+  h3.dashed {
+    padding: 0.75rem; /* slightly smaller padding on mobile */
+    font-size: 1.1rem; /* optional: scale text a bit */
+  }
         p {
             color: orange;
 		text-align: center;
