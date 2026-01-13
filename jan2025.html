@@ -28,9 +28,33 @@ a:visited {
                  table, th, td {
             border:1px solid CornflowerBlue;
                     }
-        table {
-            margin: auto;
-        }
+        img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  width: 33.33%; /* Keep 3 columns */
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    width: 600px; /* Fixed width so it scrolls instead of compressing */
+  }
+}
          
         h1 {
           color: CornflowerBlue;
@@ -55,49 +79,50 @@ a:visited {
   <li>"Samson" by Regina Spektor</li>
   <li>heating pad around my neck</li>
 </ul>  
-          <br> <br>
-           <table style="width:80%">
-  <tr>
+         
+<div class="table-wrapper">
+    <table>
+      <tr>
     <td>
-        <img style="vertical-align: bottom;" width="100%" height="75%" 
+        <img style="vertical-align: bottom;"  
             src="snow.jpg" 
                 alt="windmills in the snow" >
                 </td>
-    <td><img style="vertical-align: bottom;" width="100%" height="75%"
+    <td><img style="vertical-align: bottom;" 
             src="csp.jpg" 
                 alt="cy penny sophia on couch" 
                 ></td>
-             <td><img style="vertical-align: bottom;" width="100%" height="75%"
+             <td><img style="vertical-align: bottom;" 
             src="pants.jpg" 
                 alt="pants bunched" 
                 ></td>
   </tr>
   <tr>
     <td>
-        <img style="vertical-align: bottom;" width="100%" height="75%" 
+        <img style="vertical-align: bottom;"  
             src="gumbp.jpg" 
                 alt="gumball machines" >
                 </td>
-    <td><img style="vertical-align: bottom;" width="100%" height="75%"
+    <td><img style="vertical-align: bottom;" 
             src="elfelk.jpg" 
                 alt="wooden elf" 
                 ></td>
-             <td><img style="vertical-align: bottom;" width="100%" height="75%"
+             <td><img style="vertical-align: bottom;" 
             src="dinner.jpg" 
                 alt="soup and rice" 
                 ></td>
   </tr>
           <tr>
     <td>
-        <img style="vertical-align: bottom;" width="100%" height="75%" 
+        <img style="vertical-align: bottom;"  
             src="bathrm.jpg" 
                 alt="red and blue bathroom" >
                 </td>
-    <td><img style="vertical-align: bottom;" width="100%" height="75%"
+    <td><img style="vertical-align: bottom;" 
             src="driedp.jpg" 
                 alt="dry plants" 
                 ></td>
-             <td><img style="vertical-align: bottom;" width="100%" height="75%"
+             <td><img style="vertical-align: bottom;" 
             src="1mall.jpg" 
                 alt="drawings on windows at downtown mall" 
                 ></td>
