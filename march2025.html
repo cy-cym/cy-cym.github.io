@@ -25,15 +25,36 @@ a:visited {
   color: CornflowerBlue;
 }
 
-                 table, th, td {
+                  table, th, td {
             border:1px solid CornflowerBlue;
                     }
-        table {
-            margin: auto;
-          border-collapse: collapse;
-          border-spacing: 0;
-          width: 100%;
-        }
+        img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  width: 33.33%; /* Keep 3 columns */
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    width: 600px; /* Fixed width so it scrolls instead of compressing */
+  }
+}
          
         h1 {
           color: CornflowerBlue;
@@ -65,52 +86,52 @@ a:visited {
           <table style="width:80%">
   <tr>
     <td>
-        <img style="vertical-align: bottom;" width="100%" height="75%" 
+        <img style="vertical-align: bottom;"  
             src="cake.jpg" 
                 alt="cake with strawberries and sprinkles" >
                 </td>
-    <td><img style="vertical-align: bottom;" width="100%" height="75%"
+    <td><img style="vertical-align: bottom;" 
             src="thumb.jpg" 
                 alt="blood in thumb cuticle" 
                 ></td>
-             <td><img style="vertical-align: bottom;" width="100%" height="75%"
+             <td><img style="vertical-align: bottom;" 
             src="swan.jpg" 
                 alt="hood ornament in shape of a swan" 
                 ></td>
   </tr>
   <tr>
     <td>
-        <img style="vertical-align: bottom;" width="100%" height="75%" 
+        <img style="vertical-align: bottom;"  
             src="rock.jpg" 
                 alt="rock with lichen on it" >
                 </td>
-    <td><img style="vertical-align: bottom;" width="100%" height="75%"
+    <td><img style="vertical-align: bottom;" 
             src="whinny.jpg" 
                 alt="weird shaped object" 
                 ></td>
-             <td><img style="vertical-align: bottom;" width="100%" height="75%"
+             <td><img style="vertical-align: bottom;" 
             src="wooddog.jpg" 
                 alt="wood dog sculpture with newspaper in mouth" 
                 ></td>
   </tr>
           <tr>
     <td>
-        <img style="vertical-align: bottom;" width="100%" height="75%" 
+        <img style="vertical-align: bottom;"  
             src="hound.jpg" 
                 alt="hounddog toy" >
                 </td>
-    <td><img style="vertical-align: bottom;" width="100%" height="75%"
+    <td><img style="vertical-align: bottom;" 
             src="280.jpg" 
                 alt="280 miles worth of gas" 
                 ></td>
-    <td><img style="vertical-align: bottom;" width="100%" height="75%"
+    <td><img style="vertical-align: bottom;" 
             src="icecream.jpg" 
                 alt="cy near an icecream sculpture" 
                 ></td>
   </tr>
 </table>
 </div>
-<br>
+
           
           <footer>
   <a href="blog.html"</a>
