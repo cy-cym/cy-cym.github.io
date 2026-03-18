@@ -28,7 +28,7 @@ a:visited {
   h1 {
   color: MidnightBlue;
   text-align: center;
-  text-shadow: 2px 2px 5px white;
+  text-shadow: 2px 2px 5px red;
           }
 
           h2 {font-size: 18;
@@ -47,7 +47,7 @@ background-color: HoneyDew;
   <h1>March..2026..</h1>
 
 <h2 style="color: MidnightBlue; top: 100px; left: 150px"></h2>
-<button style="font-family: Times New Roman; font-weight: bold; color: MidnightBlue; top: 300px; left: 300px" onclick="landscapegeneration()">Click for Landscape Generation</button>
+<button style="font-family: Times New Roman; font-weight: bold; color: MidnightBlue; top: 300px; left: 300px" onclick="marching()">Click Here to March</button>
 
       <script>
   let responses = [
@@ -77,7 +77,7 @@ background-color: HoneyDew;
 "upon the interstate",
 ]
     
-    function landscapegeneration(){
+    function marching(){
       document.querySelector("h2").innerText = choice (responses)
     }
     
