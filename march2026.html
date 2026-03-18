@@ -31,6 +31,57 @@ a:visited {
   text-shadow: 2px 2px 5px white;
           }
 
+          h2 {font-size: 18;
+    position: absolute;
+  }
+
+button {font-size: 20px;
+padding: 10px;
+position: absolute;
+background-color: HoneyDew;
+          border: 2px dotted Midnightblue;
+  }
+
 </style>
 
   <h1>March..2026..</h1>
+
+<h2 style="color: MidnightBlue; top: 100px; left: 150px"></h2>
+<button style="font-family: Times New Roman; font-weight: bold; color: MidnightBlue; top: 300px; left: 300px" onclick="landscapegeneration()">Click for Landscape Generation</button>
+
+      <script>
+  let responses = [
+"tremor",
+"deer shit",
+"in old snow",
+"driving down",
+"the pitted east coast",
+"there’s no",
+"not one",
+"stone",
+"unturned",
+"a song plays",
+"slippery",
+"its beams",
+"my face",
+"the facts",
+"that stir beneath",
+"my safety",
+"obscurity",
+"this gesture",
+"my duty",
+"my injunction",
+"against",
+"and for the world",
+"a single leaf",
+"upon the interstate",
+]
+    
+    function landscapegeneration(){
+      document.querySelector("h2").innerText = choice (responses)
+    }
+    
+    function choice(list){
+      return list [Math.floor(Math.random() * list.length)]
+    }
+</script>
