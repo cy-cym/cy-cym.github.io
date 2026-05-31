@@ -41,6 +41,34 @@ a:link {
 a:visited {
   color: PapayaWhip;
 }
+
+.spiral {
+        width: 500px;
+   height: 500px;
+        position: absolute;
+        transform: rotate(0deg); 
+        transition: transform 1s ease-in-out; 
+      }
+      
+      .spiral-spin {
+        transform: rotate(0deg); 
+        transition: transform 1s ease-in-out; 
+      }
+      
+      .spiral-spin:hover {
+        transform: rotate(360deg);
+      }
+      
+      .spiral img {
+        max-width: 100%; 
+        height: auto; 
+        /*position: relative;*/
+      }
+      
+      .spiral1 {
+        top: 500px;
+        left: 500px;
+      }      
 </style>
 
 <h1>MAY 2026</h1>
@@ -49,6 +77,9 @@ a:visited {
       <li>Dump No Waste</li> 
   <li>Never → To → Shove → It → Never →</li>
    </ul>
+
+   <div class="spiral spiral-spin spiral1"><img style="width:500px" src="backyardlastday.jpg" 
+         alt="gu in the backyard" title="Auguste gives our backyard one last look, maybe forever, except for on here, and here I get to look at him"></div>
 
 
   <footer>
