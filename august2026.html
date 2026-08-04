@@ -3,12 +3,10 @@
 <body>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.75">
-
    <style>
    body {
       background-color: DarkSlateBlue;
 }
-
       h1 {
          text-align: center;
          color: Wheat;
@@ -16,7 +14,6 @@
 h2 {
          color: Wheat;
       }
-
       h3 {
          color: Wheat;
       }
@@ -27,24 +24,29 @@ h2 {
   table, th, td {
             border:1px solid Wheat;
                     }
-
 table {
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
 }
-
 td {
   padding: 5px;
 }
-
 td img {
   width: 100%;
   height: auto;
   max-width: 100%;
   display: block;
 }
-
+td.text-cell {
+  vertical-align: top;
+  color: Wheat;
+  font-size: 1rem;
+  font-weight: normal;
+}
+td.text-cell p {
+  margin: 0 0 1em 0;
+}
 @media screen and (max-width: 768px) {
   .table-wrapper {
     overflow-x: auto;
@@ -61,20 +63,16 @@ td img {
             bottom: 0;
             width: 100%;
        }
-
      /* unvisited link */
 a:link {
   color: Wheat;
 }
-
 /* visited link */
 a:visited {
   color: Wheat;
 }
      </style>
-
  <h1>August 2026</h1>
-
     <div class="table-wrapper">
     <table>
       <tr>
@@ -84,37 +82,28 @@ a:visited {
            title="august 1, stained glass"
                 alt="august 1, stained glass" >
                 </td>
-         <td><h3>Why is the ground not all littered with impact from lightning? Maybe it is and I just don't notice.
-         <br><br>
-         CUTAWAY
-         <br><br>
-            Oh, I have a lot to BLOG ABOUT
-            <br><br>
-         Pinned to the border – Yellow flowers, yellow eyes
-         <br><br>
-         Windward, orographic lift
-         <br><br>
-         The children hid in the granary 
-         <br><br>
-         I stood off to the side, thumbing the sticker off an apple // We opened a beer later and talked about it
-         <br><br>
-         Imagining all the little creatures sidling by, peeping out their stars
-         <br><br>
-         I have a couple practices, but mainly I'm just trying to get some laughs while I'm here
-         <br><br>
-         Interested in direct transmission // I won't settle for any less 
-            <br><br>
-            I dread all the dreary days // And my ex's eyebrow piercing
-         </h3></td>
+         <td class="text-cell" colspan="2">
+            <p>Why is the ground not all littered with impact from lightning? Maybe it is and I just don't notice.</p>
+            <p>CUTAWAY</p>
+            <p>Oh, I have a lot to BLOG ABOUT</p>
+            <p>Pinned to the border – Yellow flowers, yellow eyes</p>
+            <p>Windward, orographic lift</p>
+            <p>The children hid in the granary</p>
+            <p>I stood off to the side, thumbing the sticker off an apple // We opened a beer later and talked about it</p>
+            <p>Imagining all the little creatures sidling by, peeping out their stars</p>
+            <p>I have a couple practices, but mainly I'm just trying to get some laughs while I'm here</p>
+            <p>Interested in direct transmission // I won't settle for any less</p>
+            <p>I dread all the dreary days // And my ex's eyebrow piercing</p>
+         </td>
  </tr>
 <tr>
     <td>
-        <img style="vertical-align: bottom;"  
+        <img
             src="156.jpeg" 
             title="august 2, offering to the roof"
                 alt="august 2, offering to the roof" >
                 </td>
-    <td><img style="vertical-align: bottom;" 
+    <td colspan="2"><img
             src="155.jpeg" 
                 title="august 2, j against the sunset"
                 alt="august 2, j against the sunset" 
@@ -122,17 +111,17 @@ a:visited {
 </tr>
        <tr>
     <td>
-        <img style="vertical-align: bottom;"  
+        <img
             src="157.jpeg" 
             title="august 3, all appear afresh again"
                 alt="august 3, all appear afresh again" >
                 </td>
-    <td><img style="vertical-align: bottom;" 
+    <td><img
             src="158.jpeg" 
                 title="august 3, wheel of fortune"
                 alt="august 3, wheel of fortune" 
                 ></td>
-          <td><img style="vertical-align: bottom;" 
+          <td><img
             src="159.jpeg" 
                 title="august 3, bridge"
                 alt="august 3, bridge" 
@@ -141,7 +130,6 @@ a:visited {
        
        </table>      
 </div>
-
   
   <footer>
   <a href="blog.html"</a>
